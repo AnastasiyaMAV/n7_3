@@ -1,85 +1,249 @@
-.container {
-    display: grid;
-    width: 100%;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 15% 1fr 1fr 1fr 15%;
-    grid-template-areas: "header header header"
-        "content-1 content-1 content-1"
-        "content-2 content-3 content-3"
-        "nav nav nav"
-        "footer footer footer";
-    text-align: center;
+@media screen and (min-width: 600px) {
+    .container {
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 15% 1fr 1fr 1fr 15%;
+        grid-template-areas: "header header header"
+            "content-1 content-1 content-1"
+            "content-2 content-3 content-3"
+            "nav nav nav"
+            "footer footer footer";
+        text-align: center;
+    }
+
+    .header {
+        display: grid;
+        grid-area: header;
+        grid-template-columns: repeat(5, 1fr);
+        background-color: #E5E5E5;
+        gap: 1rem;
+        align-items: center;
+        justify-items: center;
+        font-size: 2vw;
+    }
+
+    .content-1 {
+        grid-area: content-1;
+        justify-self: center;
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .content-2 {
+        grid-area: content-2;
+        /*background-color: rgb(108, 68, 172);*/
+        color: #1A1A1A;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 3vw;
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 1em;
+        padding-bottom: 2em;
+    }
+
+    .content-3 {
+        grid-area: content-3;
+        /*background-color: rgb(135, 87, 212);*/
+        color: #AAAAAA;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2vw;
+        padding-left: 5em;
+        padding-right: 5em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .nav {
+        display: grid;
+        grid-area: nav;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        font-size: 2vw;
+        padding-top: 1em;
+        padding-bottom: 2em;
+        column-gap: 100px;
+    }
+
+    .footer {
+        display: grid;
+        grid-area: footer;
+        grid-template-columns: repeat(4, 1fr);
+        background-color: #2B2B2B;
+        gap: 1rem;
+        align-items: center;
+        justify-items: center;
+        font-size: 2vw;
+    }
 }
 
-.header {
-    display: grid;
-    grid-area: header;
-    grid-template-columns: repeat(5, 1fr);
-    background-color: #E5E5E5;
-    gap: 1rem;
-    align-items: center;
-    justify-items: center;
-    font-size: 2vw;
+@media screen and (max-width: 599px) {
+    .header {
+        display: grid;
+        grid-area: header;
+        grid-template-columns: repeat(5, 1fr);
+        background-color: #E5E5E5;
+        gap: 1rem;
+        align-items: center;
+        justify-items: center;
+        font-size: 2vw;
+    }
+
+    .content-1 {
+        grid-area: content-1;
+        justify-self: center;
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .content-2 {
+        grid-area: content-2;
+        /*background-color: rgb(108, 68, 172);*/
+        color: #1A1A1A;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 3vw;
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 1em;
+        padding-bottom: 2em;
+    }
+
+    .content-3 {
+        grid-area: content-3;
+        /*background-color: rgb(135, 87, 212);*/
+        color: #AAAAAA;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2vw;
+        padding-left: 5em;
+        padding-right: 5em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .nav {
+        display: grid;
+        grid-area: nav;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        font-size: 2vw;
+        padding-top: 1em;
+        padding-bottom: 2em;
+        column-gap: 100px;
+    }
+
+    .footer {
+        display: grid;
+        grid-area: footer;
+        grid-template-columns: repeat(4, 1fr);
+        background-color: #2B2B2B;
+        gap: 1rem;
+        align-items: center;
+        justify-items: center;
+        font-size: 2vw;
+    }
 }
 
-.content-1 {
-    grid-area: content-1;
-    justify-self: center;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-top: 2em;
-    padding-bottom: 2em;
-}
+@media screen and (min-width: 320px) and (max-width: 599px) {
+    .container {
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 15% 1fr 1fr 1fr 1fr 15%;
+        grid-template-areas: "header header"
+            "content-1 content-1"
+            "content-2 content-2"
+            "content-3 content-3"
+            "nav nav"
+            "footer footer";
+        text-align: center;
+    }
 
-.content-2 {
-    grid-area: content-2;
-    /*background-color: rgb(108, 68, 172);*/
-    color: #1A1A1A;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 3vw;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-top: 1em;
-    padding-bottom: 2em;
-}
+    .header {
+        display: grid;
+        grid-area: header;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        background-color: #E5E5E5;
+        gap: 1rem;
+        align-items: center;
+        justify-items: center;
+        font-size: 2vw;
+    }
 
-.content-3 {
-    grid-area: content-3;
-    /*background-color: rgb(135, 87, 212);*/
-    color: #AAAAAA;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 2vw;
-    padding-left: 5em;
-    padding-right: 5em;
-    padding-top: 2em;
-    padding-bottom: 2em;
-}
+    .content-1 {
+        grid-area: content-1;
+        justify-self: center;
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
 
-.nav {
-    display: grid;
-    grid-area: nav;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    font-size: 2vw;
-    padding-top: 1em;
-    padding-bottom: 2em;
-    column-gap: 100px;
-}
+    .content-2 {
+        grid-area: content-2;
+        /*background-color: rgb(108, 68, 172);*/
+        color: #1A1A1A;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 3vw;
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 1em;
+        padding-bottom: 2em;
+    }
 
-.footer {
-    display: grid;
-    grid-area: footer;
-    grid-template-columns: repeat(4, 1fr);
-    background-color: #2B2B2B;
-    gap: 1rem;
-    align-items: center;
-    justify-items: center;
-    font-size: 2vw;
+    .content-3 {
+        grid-area: content-3;
+        /*background-color: rgb(135, 87, 212);*/
+        color: #AAAAAA;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2vw;
+        padding-left: 5em;
+        padding-right: 5em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .nav {
+        display: grid;
+        grid-area: nav;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr fr;
+        font-size: 2vw;
+        padding-left: 5em;
+        padding-right: 15em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+
+    }
+
+    .footer {
+        display: grid;
+        grid-area: footer;
+        grid-template-columns: repeat(4, 1fr);
+        background-color: #2B2B2B;
+        gap: 1rem;
+        align-items: center;
+        justify-items: center;
+        font-size: 2vw;
+    }
 }
 
 a:hover {
