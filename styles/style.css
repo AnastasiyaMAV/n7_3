@@ -16,7 +16,7 @@
     .header {
         display: grid;
         grid-area: header;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         background-color: #E5E5E5;
         gap: 1rem;
         align-items: center;
@@ -35,7 +35,6 @@
 
     .content-2 {
         grid-area: content-2;
-        /*background-color: rgb(108, 68, 172);*/
         color: #1A1A1A;
         font-family: Roboto;
         font-style: normal;
@@ -49,7 +48,6 @@
 
     .content-3 {
         grid-area: content-3;
-        /*background-color: rgb(135, 87, 212);*/
         color: #AAAAAA;
         font-family: Roboto;
         font-style: normal;
@@ -70,6 +68,15 @@
         padding-top: 1em;
         padding-bottom: 2em;
         column-gap: 100px;
+    }
+
+    .container_pict1 {
+        width: 80%;
+        max-width: 100%;
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 2em;
+        padding-bottom: 2em;
     }
 
     .footer {
@@ -88,7 +95,7 @@
     .header {
         display: grid;
         grid-area: header;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(6, 1fr);
         background-color: #E5E5E5;
         gap: 1rem;
         align-items: center;
@@ -107,7 +114,6 @@
 
     .content-2 {
         grid-area: content-2;
-        /*background-color: rgb(108, 68, 172);*/
         color: #1A1A1A;
         font-family: Roboto;
         font-style: normal;
@@ -121,7 +127,6 @@
 
     .content-3 {
         grid-area: content-3;
-        /*background-color: rgb(135, 87, 212);*/
         color: #AAAAAA;
         font-family: Roboto;
         font-style: normal;
@@ -142,6 +147,15 @@
         padding-top: 1em;
         padding-bottom: 2em;
         column-gap: 100px;
+    }
+
+    .container_pict1 {
+        width: 125%;
+        max-width: 150%;
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 2em;
+        padding-bottom: 2em;
     }
 
     .footer {
@@ -195,7 +209,6 @@
 
     .content-2 {
         grid-area: content-2;
-        /*background-color: rgb(108, 68, 172);*/
         color: #1A1A1A;
         font-family: Roboto;
         font-style: normal;
@@ -209,7 +222,6 @@
 
     .content-3 {
         grid-area: content-3;
-        /*background-color: rgb(135, 87, 212);*/
         color: #AAAAAA;
         font-family: Roboto;
         font-style: normal;
@@ -231,7 +243,15 @@
         padding-right: 15em;
         padding-top: 2em;
         padding-bottom: 2em;
+    }
 
+    .container_pict1 {
+        width: 125%;
+        max-width: 150%;
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 2em;
+        padding-bottom: 2em;
     }
 
     .footer {
@@ -265,16 +285,6 @@ a:active {
 .container_pict {
     width: 95%;
     max-width: 100%;
-
-}
-
-.container_pict1 {
-    width: 80%;
-    max-width: 90%;
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-top: 2em;
-    padding-bottom: 2em;
 }
 
 .container_pict_logo {
